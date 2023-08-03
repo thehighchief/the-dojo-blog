@@ -5,10 +5,10 @@ const NavBar = () => {
     return (
         <div className="nav-bar">
             <header>
-                <h1>Dojoblog</h1>
+                <h1 className="logo">The Dojo blog</h1>
                 <nav>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="newblog">Newbog</NavLink>
+                    <NavLink to="newblog">Newblog</NavLink>
                 </nav>
             </header>
 

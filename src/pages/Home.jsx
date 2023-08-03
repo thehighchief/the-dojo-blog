@@ -1,5 +1,5 @@
 
-import BlogDetails from "../layouts/BlogDetails";
+import BlogList from "../layouts/BlogList";
 import useFetch from "../CustomHooks/useFetch";
 
 const Home = () => {
@@ -9,7 +9,8 @@ const Home = () => {
         <div className="home-blog-display">
             {isLoading && <div>Loading...</div>}
             {error && <div>{error}</div>}
-            {blogs && <BlogDetails blogs={blogs} mainTitle={'All Blogs'}/>}
+            {blogs && <BlogList blogs={blogs} mainTitle={'All Blogs'}/>}
+            
         </div>
         
         
