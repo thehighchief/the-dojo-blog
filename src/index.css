@@ -107,3 +107,53 @@ nav, a {
   border: .1em solid #f1356d;
 }
 
+/* newblog */
+
+.newblog {
+  padding-top: 2em;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.newblog h1 {
+  color: #f1356d;
+}
+
+.newblog form {
+  display: grid;
+  gap: 1em;
+  max-width: 600px;
+  text-align: left;
+  margin: auto;
+}
+
+.newblog label {
+  display: grid;
+  gap: 1em;
+}
+
+.newblog span {
+  font-size: 1.3em;
+}
+
+.newblog input{
+  padding: 1.1em;
+}
+
+.newblog button {
+  background: #f1356d;
+  padding: 1em 1.4em;
+  margin: 1.5em auto;
+  outline: none;
+  border: 1px solid #f1356d;
+  border-radius: .5em;
+  color: #fff;
+  font-size: .9em;
+}
+
+.newblog button:hover {
+  color: #f1356d;
+  background: #fff;
+  border: 1px solid #f1356d;
+}
+

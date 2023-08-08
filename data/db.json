@@ -1,40 +1,52 @@
 {
-    "blogs": [
-      {
-        "title": "Opening Party!",
-        "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n\nWhere does it come from?\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.\n\nWhere can I get some?\nThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-        "author": "yoshi",
-        "id": 2
-      },
-      {
-        "title": "Evening date",
-        "body": "With the release of React Router v6, we no longer utilize the useHistory() hook, but instead the useNavigate() hook, which is quite similar.\n\nThis is also accomplished by importing the hook and then assigning a variable to the useNavigate() hook, like we did with useHistory(). We can now utilize the variable that was returned to navigate the user to other pages.",
-        "author": "charls",
-        "id": 4
-      },
-      {
-        "title": "Conclusion",
-        "body": "Sorry, I'm confused. In the large code block you have \"The next line is very important for the Navigate component to work\" but then don't explain it. ErrorPage appears to be something special as you import it at the top. I'm trying to recreate RewriteRule in .htaccess so it takes a regular expression to match against a URL and then redirects to an arbitrary new URL.",
-        "author": "Bukason",
-        "id": 5
-      },
-      {
-        "title": "You might also like",
-        "body": "Note: Unlike the useHistory() hook, this does not require calling the push method. All we need to do is pass the path as an argument to the navigate function.",
-        "author": "Yoshi",
-        "id": 6
-      },
-      {
-        "title": "Programmatic Redirects with",
-        "body": "The useHistory() hook is first imported and then assigned to a variable, which is subsequently utilized in a button (for example) to redirect users once a specific action is taken. Using the onClick event, we can then call the .push() method to tell React Router where we want the button to redirect to.",
-        "author": "Mario",
-        "id": 7
-      },
-      {
-        "title": "Replacing the Current URL",
-        "body": "In some cases, you might want to replace the current URL in the browser instead of adding (i.e., pushing) it to your browser's history, to do this we simply have to add the replace prop to the Navigate component.",
-        "author": "Embassy",
-        "id": 8
-      }
-    ]
-  }
+  "blogs": [
+    {
+      "title": "Opening Party!",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n\nWhere does it come from?\nContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.\n\nThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.\n\nWhere can I get some?\nThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+      "author": "yoshi",
+      "id": 2
+    },
+    {
+      "title": "Evening date",
+      "body": "With the release of React Router v6, we no longer utilize the useHistory() hook, but instead the useNavigate() hook, which is quite similar.\n\nThis is also accomplished by importing the hook and then assigning a variable to the useNavigate() hook, like we did with useHistory(). We can now utilize the variable that was returned to navigate the user to other pages.",
+      "author": "charls",
+      "id": 4
+    },
+    {
+      "title": "Conclusion",
+      "body": "Sorry, I'm confused. In the large code block you have \"The next line is very important for the Navigate component to work\" but then don't explain it. ErrorPage appears to be something special as you import it at the top. I'm trying to recreate RewriteRule in .htaccess so it takes a regular expression to match against a URL and then redirects to an arbitrary new URL.",
+      "author": "Bukason",
+      "id": 5
+    },
+    {
+      "title": "You might also like",
+      "body": "Note: Unlike the useHistory() hook, this does not require calling the push method. All we need to do is pass the path as an argument to the navigate function.",
+      "author": "Yoshi",
+      "id": 6
+    },
+    {
+      "title": "Programmatic Redirects with",
+      "body": "The useHistory() hook is first imported and then assigned to a variable, which is subsequently utilized in a button (for example) to redirect users once a specific action is taken. Using the onClick event, we can then call the .push() method to tell React Router where we want the button to redirect to.",
+      "author": "Mario",
+      "id": 7
+    },
+    {
+      "title": "Replacing the Current URL",
+      "body": "In some cases, you might want to replace the current URL in the browser instead of adding (i.e., pushing) it to your browser's history, to do this we simply have to add the replace prop to the Navigate component.",
+      "author": "Embassy",
+      "id": 8
+    },
+    {
+      "title": "the mastermind group",
+      "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus autem quas dolore tempora dolorem perspiciatis nisi alias accusamus inventore corporis!\n",
+      "author": "bukason",
+      "id": 10
+    },
+    {
+      "title": "the Aftermath",
+      "body": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas quasi magnam impedit laboriosam et nisi eum exercitationem cupiditate similique minima tenetur, sapiente ipsum nulla voluptatem optio quod quae necessitatibus, quis cum dolores. Explicabo, itaque dolores vitae deserunt iusto dolore iste! Iure rem cum ex nemo enim, molestias neque veniam\n",
+      "author": "Frank",
+      "id": 11
+    }
+  ]
+}
