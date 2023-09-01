@@ -1,34 +1,43 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useFetch from "../CustomHooks/useFetch";
+import { useGetOneBlogQuery, useDeleteBlogMutation } from "../slices/BlogApiSlice";
+import loader from '../images/loader.svg'
 
 const BlogDetails = () => {
 
     const {id} = useParams();
     const navigate = useNavigate();
 
-    const { data: blog, error, isLoading } = useFetch('http://localhost:3000/blogs/' + id)
+    const { data: blog, isLoading, error } = useGetOneBlogQuery(id);
 
-    const handleDelete = () => {
-        fetch('http://localhost:3000/blogs/' + blog.id, {
-            method: 'DELETE'
-        }).then(()  => {
-            // the useNavigate method is called to tyake the user to the homepage after deleting the said blog instead of remainig on the page
-            navigate('/')
-        })
-    }
+    const [deleteBlog, {isLoading:loading}] = useDeleteBlogMutation();
+
+    const handleDelete = async (id) => {
+    
+        await deleteBlog(id);
+        navigate('/');
+       
+    };
+
+
     return (
         
 
         <div className="blog-details">
-            {error && <div>{error}</div>}
-            {isLoading && <h2 className="loading">Loading...</h2>}
-            {blog && (
-                <article>
-                    <h2>{blog.title}</h2>
-                    <p>written by {blog.author}</p>
-                    <div>{blog.body}</div>
-                    <button onClick={handleDelete} className="delete-btn">Delete</button>
-                </article>
+            
+            { isLoading ? (
+                <img src={loader} alt="loading" />
+            ) : error ? (
+                <div>{ error?.data?.error || error.error }</div>
+            ) : (
+                <div>{blog && (
+                    <article key={blog.id}>
+                        <h2>{blog.title}</h2>
+                        <p>written by {blog.aurthor}</p>
+                        <div>{blog.body}</div>
+                        <button onClick={()=>handleDelete(id)} className="delete-btn" disabled={loading}>Delete</button>
+                        {loading && <div className="delete">Deleting....</div>}
+                    </article>
+                )}</div>
             )}
 
         </div>

@@ -7,7 +7,7 @@ import {
 
 import NavBar from "./layouts/NavBar"
 import Home from "./pages/Home"
-import NewBlog, { ContactAction } from "./pages/NewBlog"
+import NewBlog from "./pages/NewBlog"
 import BlogDetails from "./layouts/BlogDetails"
 import NotFound from "./pages/NotFound"
 
@@ -16,8 +16,8 @@ const router = createBrowserRouter(
     <Route path = "/" element={<NavBar/>}>
       
       <Route index element = {<Home />} />
-      <Route path = "newblog" element = {<NewBlog />} action={ContactAction}/>
-      <Route path = "/blogs/:id" element = {<BlogDetails />} />
+      <Route path = "newblog" element = {<NewBlog />} />
+      <Route path = "/api/blogs/:id" element = {<BlogDetails />} />
       <Route path ="*" element={<NotFound />} />
     </Route>
   )
